@@ -1,0 +1,116 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins',sans-serif;
+}
+
+body {
+background: rgb(108, 68, 108);
+
+}
+ 
+header {
+position: absolute;
+top: 10%;
+left: 30%;
+color: rgb(245, 245, 98);
+}
+
+/* Start Button */
+.start_btn {
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 30px; 
+font-style: bold;
+/* //font size & style not doing anything so far// */ 
+}
+
+.start_btn button {
+font-size: 25px;
+font-weight: 300;
+color: black;
+padding: 15px 30px;
+outline: none;
+border: none;
+border-radius: 5px;
+background: white;
+cursor: pointer;
+}
+
+.quiz_rules {
+width: 500px;
+background: rgb(192, 181, 198);
+border-radius: 5px;
+}
+
+.quiz_rules .rules_list_title {
+height: 60px;
+width: 100%;
+border-bottom: 1px solid grey;
+display: flex;
+align-items: center;
+padding: 0 35px;
+font-size: 20px;
+font-weight: 600;
+}
+
+.quiz_rules .rules_list {
+padding: 15px 35px;
+}
+
+.quiz_rules .rules_list_title .rules{
+margin: 5px 0;
+font-size: 17px;
+}
+
+.quiz_rules .buttons {
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: flex-ed;
+padding: 0 35px;
+border-top: 1px solid lightgrey;
+}
+
+
+.quiz_rules .buttons .button {
+margin: 0 5px;
+height: 40px;
+width: 100px;
+border: 1pz solid transparent;
+background: gray;
+border-radius: 5px;
+color: white;
+font-size: 16px;
+font-weight: 500px;
+cursor: pointer;
+}
+
+.buttons button.quit {
+font-size: 25px;
+font-weight: 300;
+color: black;
+padding: 15px 30px;
+outline: none;
+border: none;
+border-radius: 5px;
+background: white;
+cursor: pointer;
+}
+
+
+.buttons button.restart {
+font-size: 25px;
+font-weight: 300;
+color: black;
+padding: 15px 30px;
+outline: none;
+border: none;
+border-radius: 5px;
+background: white;
+cursor: pointer;
+}
+
