@@ -18,22 +18,22 @@ left: 30%;
 color: rgb(245, 245, 98);
 font-size: 24px;
 }
+/*  -------------------------------- THIS IS THE START OF ALL BUTTONS ------------------------------------ */
 
-/* Start Button */
+/* START BUTTON: this will allow the user to start the quiz - TIMER STARTS! */
 .start_btn  {
 position: absolute;
 top: 20%;
 left: 50%;
 transform: translate(-50%, -50%);
 font-size: 30px; 
-/* font-style: bold; */
+/* font-style: bold; */ 
 /* //font size & style not doing anything so far// */ 
 }
  
 /* this is styling the main start button further*/
 .start_btn button {
 font-size: 25px;
-font-weight: 300;
 color: black;
 padding: 15px 30px;
 outline: none;
@@ -42,21 +42,7 @@ border-radius: 5px;
 background: white;
 cursor: pointer;
 }
-
-/* this will be the button to quit completely */
-.buttons button.quit {
-font-size: 25px;
-font-weight: 300;
-color: black;
-padding: 15px 30px;
-outline: none;
-border: none;
-border-radius: 5px;
-background: white;
-cursor: pointer;
-}
-     
-/* this will be the button to restart the quiz again */
+/* RESTART THE QUIZ AGAIN: (after saving results from previous round)*/
 .buttons button.restart {
 font-size: 25px;
 font-weight: 300;
@@ -69,66 +55,47 @@ background: white;
 cursor: pointer;
 }
 
-/* this is hiding the box till called */
-.quiz_rules {
-display: none;
-width: 500px;
-background: rgb(192, 181, 198);
+/* NEXT BUTTON: this will allow the user to continue the quiz */
+.next_button {
+position: absolute;
+font-size: 25px;
+color: black;
+padding: 15px 30px;
+outline: none;
+border: none;
 border-radius: 5px;
-}
-
-
-.quiz_rules .rules_list_title {
-height: 60px;
-width: 100%;
-border-bottom: 1px solid grey;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 0 35px;
-font-size: 20px;
-font-weight: 600;
-}
-
-/* this only applies to quiz rules and rules list */
-.quiz_rules .rules_list {
-padding: 15px 35px;
-}
-
-/* styling of quiz rules box, with the list and all the rules under */
-.quiz_rules .rules_list_title .rules{
-margin: 5px 0;
-font-size: 17px;
-}
-
-/* this is styling the quiz sules + all buttons */
-.quiz_rules .buttons {
-height: 60px;
-display: flex;
-align-items: center;
-justify-content: flex-ed;
-padding: 0 35px;
-border-top: 1px solid lightgrey;
-}
-
-/* this is styling the quiz rules "box" with all buttons and button class */
-.quiz_rules .buttons .button {
-margin: 0 5px;
-height: 40px;
-width: 100px;
-border: 1pz solid transparent;
-background: gray;
-border-radius: 5px;
-color: white;
-font-size: 16px;
-font-weight: 500px;
+background: white;
 cursor: pointer;
+top: 70%;
+left: 50%;
+transform: translate(-50%, -50%);
+ }
+
+
+/* QUIT BUTTON: this will allow the user to quit the quiz*/
+.buttons button.quit {
+position: absolute;
+font-size: 25px;
+color: black;
+padding: 15px 30px;
+outline: none;
+border: none;
+border-radius: 5px;
+background: white;
+cursor: pointer;
+top: 78%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
+    
+  
+/* THIS IS ^^^^ THE END OF BUTTONS  */
+
 
 /* ----------------------------- THIS IS THE BEGGINING OF ALL QUIZ CONTENT/QUESTIONS -------------------------------- */
 
 /* this defines the quiz content all together*/
-.quiz_content {
+ .quiz_content {
 align-content: center;
 font-size: 25px;  
 font-weight: 300;
@@ -137,29 +104,30 @@ margin-left: 30%;
 margin-right: 30%;
 padding: 15px 30px;
 background: rgb(39, 45, 106);
-    /* outline: none; */
-    /* border: none; */
-    /* border-radius: 5px; */
-    }
-
+border-radius: 5px 5px 0 0;
+box-shadow: 0px 3px 5px 1px;
+/* outline: none; */
+/* border: none; */
+/* border-radius: 5px; */
+ }
 
 /* this defines the quiz header! */
 .quiz_header {
  display: flex;
-justify-content: center;
-margin-top: 5%;
-left: 30%;
-color: rgb(245, 245, 98);
+ justify-content: center;
+ margin-top: 5%;
+ left: 30%;
+ color: rgb(245, 245, 98);
  }
 
 
 /* this defines 'First Question' */
 .title_1 {
-margin: 3px;
-margin-top: 1%;
+margin-top: 0px;
+margin-bottom: 20px;
 height: 50px;
 width: 200;
-border: 1pz solid;
+border: 1px solid;
 background: rgb(22, 120, 117);
 border-radius: 3px;
 color: rgb(199, 222, 219);
@@ -178,19 +146,9 @@ align-content: center;
 .responses {
 color:rgb(245, 245, 98);
 cursor: pointer;
-align-content: center;
-}
+align-self: center;
+margin-left: 30%;
 
-/* this is the 'NEXT BUTTON' after they finish a question */
-.next_button {
-position: absolute;
-top: 60%;
-left: 50%;
-transform: translate(-50%, -50%);
-font-size: 25px; 
-cursor: pointer;
-background: rgb(22, 120, 117);
-color:rgb(240, 240, 236)
 }
 
 
