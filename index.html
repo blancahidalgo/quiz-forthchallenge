@@ -10,16 +10,17 @@
 
 <!-- MY BODY STARTS HERE! -->
 <body>
+    
+<!-- THE TIME WILL LIVE IN THE NAV BAR AT THE TOP -->
+    <nav class="timer"> 
+        <div class="time_text">TIME LEFT</div>
+        <div class="timer_sec">60</div>
+    </nav>
+<!-- JUST AN INTRO HERE! -->
     <header class="top_header">
        <h2>ARE YOU READY TO START THIS FUN QUIZ?</h2>
     </header>
 
-    <!-- THE TIME WILL LIVE IN THE NAV BAR AT THE TOP -->
-    <nav> 
-        <div class="timer">
-            <div class="time_text">Time Left</div>
-            <div class="timer_sec">15</div>
-    </nav>
 
     <!--ALL BUTTONS HERE 'Start'-'Next Q'-'Exit'-->
     <div class="start_btn"><button>START</button></div>
@@ -33,11 +34,9 @@
        <header class="quiz_header">
          <div class="title_1">FIRST QUESTION</div>
         </header>
-         <section> 
-            <div class="questions">
-                <span>WHAT DOES HTML STAND FOR?</span>
-            </div>
-            <div class="responses">
+         <section class="questions_responses">
+            <span>- WHAT DOES HTML STAND FOR?</span>
+            <div>
                 <div class="option">
                 <span>Hyper Text Reprocessor</span>
                 <div class="option">
@@ -49,6 +48,5 @@
             </div>
          </section>   
     </div> 
-
     <script src="script.js"></script>
 </body>
