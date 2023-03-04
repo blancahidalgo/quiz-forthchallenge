@@ -7,29 +7,67 @@
     <title>Blanca's Super Quiz</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
-    <header>
-       <h2>READY TO START THIS FUN QUIZ?</h2>
-    </header>
-    <!--Start Quiz Button-->
-    <div class="start_btn"><button>START QUIZ</button></div>
 
-    <!-- Quiz Rules -->
+<!-- MY BODY STARTS HERE! -->
+<body>
+    <header class="top_header">
+       <h2>ARE YOU READY TO START THIS FUN QUIZ?</h2>
+    </header>
+
+    <!-- The time will leave in the navigation bar at the very top -->
+    <nav> 
+        <div class="timer">
+            <div class="time_text">Time Left</div>
+            <div class="timer_sec">15</div>
+    </nav>
+
+    <!--Start Quiz Button-->
+    <div class="start_btn"><button>START</button></div>
+
+    <!-- Quiz Rules Box -->
 <div class="quiz_rules">
     <div class="rules_list_title">
         <span>Rules about this quiz</span>
     </div>
     <div class="rules_list">
-        <div class="rules">1. First rule</div>
-        <div class="rules">2. Second Rule</div>
-        <div class="rules">3. Third Rule</div>
-        <div class="rules">4. Fourth Rule</div>
-        <div class="rules">5. Fifth Rule</div>
+        <div class="rules">- The quiz will be timed</div>
+        <div class="rules">- Once you start the quiz, the timer will start the countdown!</div>
+        <div class="rules">- If you answer succesfully it will prompt you with another question</div>
+        <div class="rules">- If you don't, it will deduct time on the clock</div>
+        <div class="rules">- The game will be over when you've answered all the questions OR the time is over!</div>
+        <div class="rules">- The game will allow you to save your initials and start over </div>
     </div>
 </div>
     <div class="buttons"> 
         <button class="quit">Exit Quiz</button>
         <button class="restart">Continue</button>
     </div>
+
+    <!-- QUIZ CONTENT STARTS HERE -->
+    <div class="quiz_content">
+       <header class="quiz_header">
+         <div class="title_1">FIRST QUESTION</div>
+        </header>
+         <section> 
+            <div class="questions">
+                <span>WHAT DOES HTML STAND FOR?</span>
+            </div>
+            <div class="responses">
+                <div class="option">
+                <span>Hyper Text Reprocessor</span>
+                <div class="option">
+                <span>Hyper Text Markup Language</span>
+                <div class="option">
+                <span>Hyper Text Multiple Languages</span>
+                <div class="option">
+                <span>Hyper Tool Multi Language</span>
+            </div>
+          <!-- Quiz Box Footer -->
+            <footer> 
+                <button class="next_button">Next Question</button>
+            </footer>
+         </section>   
+    </div> 
+
     <script src="script.js"></script>
 </body>
