@@ -1,0 +1,12 @@
+I've created a quiz with 5 questions 
+The user needs to start the game and this will prompt a timer to go off and start decrementing seconds
+If the user gets any responses wrong this will continuesly decremetn 15' every time 
+If the user gets through all the questions and has time left, this number will contribute to the final score
+If the user doesn't finish the question and they ran off time, this will allow them to start again but at this stage they've lost the round
+They will get a prompt message saying wether they have gotten an answer right or wrong 
+It will remember the previous score once they go onto round 2! 
+
+I've achieved this creating the HTML file, linking it to an external CSS file and then also to a Javascript file. All the code setting up interactivity is within Js file. Starting with the array of questions, then a list of variables that will be called later on through the functions. Adding some logic when the answers are submitted so the value of the answer can be compared to the value of the "right answer" which will prompt the correct or not correct message and decrement seconds if wrong. 
+
+To finish up the localsStorage will allow the browser to store the previous score.
+
