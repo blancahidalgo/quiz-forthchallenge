@@ -14,39 +14,39 @@
 <!-- THE TIME WILL LIVE IN THE NAV BAR AT THE TOP -->
     <nav>
         <div class="time_text">TIME LEFT</div>
-        <div class="timer_secs">60</div>
+        <div id="time"></div>
     </nav>
 <!-- JUST AN INTRO HERE! -->
+<div class="start-screen">
     <header class="top_header">
-       <h2>ARE YOU READY TO START THIS FUN QUIZ?</h2>
-    </header>
+        <h2>ARE YOU READY TO START THIS FUN QUIZ?</h2>
+     </header>
+ 
+ 
+     <!--ALL BUTTONS HERE 'Start'-'Next Q'-'Exit'-->
+     <div><button class="start_btn">START</button></div>
+     <div class="buttons"> 
+        
+     </div>
+</div>
 
-
-    <!--ALL BUTTONS HERE 'Start'-'Next Q'-'Exit'-->
-    <div class="start_btn"><button>START</button></div>
-    <div class="buttons"> 
-        <button class="quit">EXIT QUIZ</button>
-        <button class="next_button">NEXT QUESTION --></button>
-    </div>
 
     <!-- QUIZ CONTENT STARTS HERE -->
-    <div class="quiz_content">
+    <div class="hide" id="quiz_content">
        <header class="quiz_header">
-         <div class="title_1">FIRST QUESTION</div>
+         <div id="question-title"></div>
         </header>
          <section class="questions_responses">
-            <span>- WHAT DOES HTML STAND FOR?</span>
-            <div>
-                <div class="option">
-                <span>Hyper Text Reprocessor</span>
-                <div class="option">
-                <span>Hyper Text Markup Language</span>
-                <div class="option">
-                <span>Hyper Text Multiple Languages</span>
-                <div class="option">
-                <span>Hyper Tool Multi Language</span>
-            </div>
+
          </section>   
+
+         <div id="feedback"></div>
     </div> 
+
+    <!-- quiz ends here  -->
+    <div class="hide" id="end-el">
+        <div id="score"></div>
+        <button id="clear">Clear High Scores</button>
+    </div>
     <script src="script.js"></script>
 </body>
